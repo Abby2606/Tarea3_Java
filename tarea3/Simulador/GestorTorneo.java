@@ -15,5 +15,8 @@ public class GestorTorneo {
 
     public void iniciarTorneo() {
        // Lógica para iniciar el torneo, emparejando equipos y simulando combates hasta determinar un ganador
+       if (bracket.isEmpty()) {
+        System.out.println();
+       }
     }
 }

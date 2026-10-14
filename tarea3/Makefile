@@ -1,17 +1,13 @@
-JC = javac
+#Ruta libreria de lectura Gson
+CLASSPATH = lib/gson-2.14.0.jar
 
-JFLAGS = -encoding UTF-8 -d . -Xlint:all
-
-SOURCES = Entidades/*.java MecanicasCombate/*.java Simulador/*.java
-
-all: clean compile
-	@echo "¡Compilación y revisión de warnings lista!"
+all: compile
 
 compile:
-	$(JC) $(JFLAGS) $(SOURCES)
+	javac -cp "$(CLASSPATH)" Entidades/*.java MecanicasCombate/*.java Simulador/*.java
+
+run: compile
+	java -cp ".:$(CLASSPATH)" Simulador.Main movimientos.json equipos.json
 
 clean:
-	@echo "Limpiando archivos compilados..."
-	@rm -f Entidades/*.class MecanicasCombate/*.class Simulador/*.class
-
-.PHONY: all compile clean
+	rm -f Entidades/*.class MecanicasCombate/*.class Simulador/*.class

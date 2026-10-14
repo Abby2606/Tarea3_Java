@@ -4,12 +4,14 @@ import Entidades.Javaling;
 public class AtaqueEstado extends Ataque {
     private String statAfectado;
     private Boolean fueUsado;
+    private double multiplicador;
 
     // Constructor
-    public AtaqueEstado(String nombre, TipoElemental tipo, String statAfectado) {
+    public AtaqueEstado(String nombre, TipoElemental tipo, String statAfectado, double multiplicador) {
         super(nombre, tipo);
         this.statAfectado = statAfectado;
         this.fueUsado = false;
+        this.multiplicador = multiplicador;
     }
     // Getter
     public String getStatAfectado() {return statAfectado;}
