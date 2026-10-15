@@ -1,7 +1,6 @@
 package Simulador;
 
 import Entidades.Equipo;
-import Entidades.Javaling;
 import MecanicasCombate.Ataque;
 import java.util.List;
 import java.util.Map;
@@ -23,34 +22,7 @@ public class Main {
             return;
         }
 
-        //Prueba carga Json
-        System.out.println("=== PROBANDO CARGA DE MOVIMIENTOS ===");
-        System.out.println("Total de movimientos cargados en el catálogo: " + catalogo.size());
-        for (String nombreAtaque : catalogo.keySet()) {
-            System.out.println(" - Movimiento: " + nombreAtaque + " [" + catalogo.get(nombreAtaque).getClass().getSimpleName() + "]");
-        }
-
-        System.out.println("\n=== PROBANDO CARGA DE EQUIPOS Y JAVALINGS ===");
-        System.out.println("Total de equipos cargados: " + equipos.size());
-
-        for (Equipo eq : equipos) {
-            System.out.println("\n[EQUIPO] " + eq.getNombre());
-            for (Javaling jav : eq.getIntegrantes()) {
-                System.out.println("   --> Javaling: " + jav.getNombre() +
-                                   " | Tipo: " + jav.getTipo() +
-                                   " | HP: " + jav.getHpMaximo() +
-                                   " | Velocidad: " + jav.getVelocidad());
-                System.out.println("       Movimientos asignados (" + jav.getMovimientos().size() + "):");
-                for (Ataque atk : jav.getMovimientos()) {
-                    System.out.println("         * " + atk.getNombre());
-                }
-            }
-        }
-
-        System.out.println("\n=== VERIFICACIÓN DE ESTRUCTURA FINALIZADA ===");
-
-
-        //GestorTorneo torneo = new GestorTorneo(equipos);
-        //torneo.iniciarTorneo();
+        GestorTorneo torneo = new GestorTorneo(equipos);
+        torneo.iniciarTorneo();
     }
 }

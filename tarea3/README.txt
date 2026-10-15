@@ -20,5 +20,5 @@ https://www.w3schools.com/java/default.asp
     Utilizamos la version 2.14.0, el archivo se encuentra en la carpeta lib del proyecto.
 
 3. Compilacion y ejecución:
-    javac -cp "lib/gson-2.14.0.jar" -d bin Entidades/*.java MecanicasCombate/*.java Simulador/*.java
-    java -cp "lib/gson-2.14.0.jar;bin" Simulador.Main movimientos.json equipos.json
+    compilar: javac -cp "lib/gson-2.14.0.jar" -d bin Entidades/*.java MecanicasCombate/*.java Simulador/*.java
+    ejecutar: java -cp "lib/gson-2.14.0.jar;bin" Simulador.Main movimientos.json equipos.json

@@ -1,5 +1,6 @@
 package Simulador;
-import Entidades.Equipo;
+import Entidades.*;
+import MecanicasCombate.*;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -11,37 +12,62 @@ public class JuezCombate {
         this.logMatch = new ArrayList<>();
     }
 
-    public Equipo simularMatch(Equipo equipo1, Equipo equipo2) {
+    public Equipo simularMatch(Equipo local, Equipo visitante) {
         // Lógica para simular el combate entre los dos equipos
         // Se puede implementar un bucle que continúe hasta que uno de los equipos pierda todos sus Javaling
         // Durante cada turno, se pueden registrar las acciones en logMatch
         // Al final, se devuelve el equipo ganado
-        return equipo1; //temporal para que compile, se debe reemplazar con la lógica real
+        return local; //temporal para que compile, se debe reemplazar con la lógica real
     }
 
     private class RegistroTurno {
         private int numeroTurno;
         private List<String> eventosDelTurno;
 
+        // Constructor
         public RegistroTurno(int numeroTurno) {
             this.numeroTurno = numeroTurno;
             this.eventosDelTurno = new ArrayList<>();
+            GestorTorneo.escribirArchivo("Turno " + numeroTurno, true);
         }
 
+        // Getters
+        public List<String> getEventosDelTurno() {return eventosDelTurno;}
+        public int getNumeroTurno() {return numeroTurno;}
+
+        // Métodos
+        public void registrarEntra(String evento){
+            String mensaje = "[ENTRA] " + evento;
+            eventosDelTurno.add(mensaje);
+            logMatch.add(mensaje);
+            GestorTorneo.escribirArchivo(mensaje, true);
+        }
         public void registrarEstado(String evento) {
-            eventosDelTurno.add("[ESTADO]" + evento);
+            String mensaje = "[ESTADO] " + evento;
+            eventosDelTurno.add(mensaje);
+            logMatch.add(mensaje);
+            GestorTorneo.escribirArchivo(mensaje, true);
         }
 
         public void registrarCambio(String evento) {
-            eventosDelTurno.add("[CAMBIO]" + evento);
+            String mensaje = "[CAMBIO] " + evento;
+            eventosDelTurno.add(mensaje);
+            logMatch.add(mensaje);
+            GestorTorneo.escribirArchivo(mensaje, true);
         }
 
         public void registrarAtaque(String evento) {
-            eventosDelTurno.add("[ATAQUE]" + evento);
+            String mensaje = "[ATAQUE] " + evento;
+            eventosDelTurno.add(mensaje);
+            logMatch.add(mensaje);
+            GestorTorneo.escribirArchivo(mensaje, true);
         }
 
         public void registrarKO(String evento) {
-            eventosDelTurno.add("[KO]" + evento);
+            String mensaje = "[KO] " + evento;
+            eventosDelTurno.add(mensaje);
+            logMatch.add(mensaje);
+            GestorTorneo.escribirArchivo(mensaje, true);
         }
     }
 }
