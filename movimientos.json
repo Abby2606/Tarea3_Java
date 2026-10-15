@@ -1,0 +1,50 @@
+[
+  {
+    "nombre": "Pájaro Osado",
+    "categoria": "Físico",
+    "elemento": "Volador",
+    "potencia": 120
+  },
+  {
+    "nombre": "Llamarada",
+    "categoria": "Especial",
+    "elemento": "Fuego",
+    "potencia": 90
+  },
+  {
+    "nombre": "Ascuas",
+    "categoria": "Físico",
+    "elemento": "Fuego",
+    "potencia": 40
+  },
+  {
+    "nombre": "Hidrobomba",
+    "categoria": "Especial",
+    "elemento": "Agua",
+    "potencia": 90
+  },
+  {
+    "nombre": "Rayo",
+    "categoria": "Especial",
+    "elemento": "Electrico",
+    "potencia": 90
+  },
+  {
+    "nombre": "Trueno",
+    "categoria": "Físico",
+    "elemento": "Electrico",
+    "potencia": 85
+  },
+  {
+    "nombre": "Danza Espada",
+    "categoria": "Estado",
+    "stat_afectado": "ataque",
+    "multiplicador": 2.0
+  },
+  {
+    "nombre": "Agilidad",
+    "categoria": "Estado",
+    "stat_afectado": "velocidad",
+    "multiplicador": 1.5
+  }
+]

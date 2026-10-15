@@ -1,0 +1,178 @@
+[
+  {
+    "nombre_equipo": "Equipo Alfa",
+    "javalings": [
+      {
+        "nombre": "Ignisaur",
+        "tipo": "Fuego",
+        "stats": {
+          "hp": 120,
+          "ataque": 55,
+          "defensa": 50,
+          "ataque_especial": 70,
+          "defensa_especial": 60,
+          "velocidad": 65
+        },
+        "movimientos": ["Llamarada", "Ascuas", "Danza Espada"]
+      },
+      {
+        "nombre": "Aqualon",
+        "tipo": "Agua",
+        "stats": {
+          "hp": 130,
+          "ataque": 50,
+          "defensa": 55,
+          "ataque_especial": 65,
+          "defensa_especial": 60,
+          "velocidad": 60
+        },
+        "movimientos": ["Hidrobomba", "Rayo", "Agilidad"]
+      },
+      {
+        "nombre": "Voltios",
+        "tipo": "Electrico",
+        "stats": {
+          "hp": 110,
+          "ataque": 60,
+          "defensa": 45,
+          "ataque_especial": 75,
+          "defensa_especial": 50,
+          "velocidad": 80
+        },
+        "movimientos": ["Rayo", "Trueno", "Agilidad"]
+      }
+    ]
+  },
+  {
+    "nombre_equipo": "Equipo Beta",
+    "javalings": [
+      {
+        "nombre": "Pyroar",
+        "tipo": "Fuego",
+        "stats": {
+          "hp": 125,
+          "ataque": 58,
+          "defensa": 48,
+          "ataque_especial": 72,
+          "defensa_especial": 55,
+          "velocidad": 68
+        },
+        "movimientos": ["Llamarada", "Ascuas", "Danza Espada"]
+      },
+      {
+        "nombre": "Tidewave",
+        "tipo": "Agua",
+        "stats": {
+          "hp": 135,
+          "ataque": 52,
+          "defensa": 58,
+          "ataque_especial": 68,
+          "defensa_especial": 62,
+          "velocidad": 58
+        },
+        "movimientos": ["Hidrobomba", "Rayo", "Agilidad"]
+      },
+      {
+        "nombre": "Sparky",
+        "tipo": "Electrico",
+        "stats": {
+          "hp": 115,
+          "ataque": 62,
+          "defensa": 46,
+          "ataque_especial": 78,
+          "defensa_especial": 52,
+          "velocidad": 85
+        },
+        "movimientos": ["Rayo", "Trueno", "Agilidad"]
+      }
+    ]
+  },
+  {
+    "nombre_equipo": "Equipo Gamma",
+    "javalings": [
+      {
+        "nombre": "Blazeburn",
+        "tipo": "Fuego",
+        "stats": {
+          "hp": 122,
+          "ataque": 56,
+          "defensa": 50,
+          "ataque_especial": 74,
+          "defensa_especial": 58,
+          "velocidad": 66
+        },
+        "movimientos": ["Llamarada", "Ascuas", "Danza Espada"]
+      },
+      {
+        "nombre": "Aquafly",
+        "tipo": "Agua",
+        "stats": {
+          "hp": 128,
+          "ataque": 50,
+          "defensa": 52,
+          "ataque_especial": 66,
+          "defensa_especial": 60,
+          "velocidad": 62
+        },
+        "movimientos": ["Hidrobomba", "Rayo", "Agilidad"]
+      },
+      {
+        "nombre": "Statix",
+        "tipo": "Electrico",
+        "stats": {
+          "hp": 118,
+          "ataque": 64,
+          "defensa": 48,
+          "ataque_especial": 76,
+          "defensa_especial": 54,
+          "velocidad": 82
+        },
+        "movimientos": ["Rayo", "Trueno", "Agilidad"]
+      }
+    ]
+  },
+  {
+    "nombre_equipo": "Equipo Delta",
+    "javalings": [
+      {
+        "nombre": "Flameclaw",
+        "tipo": "Fuego",
+        "stats": {
+          "hp": 124,
+          "ataque": 60,
+          "defensa": 49,
+          "ataque_especial": 70,
+          "defensa_especial": 56,
+          "velocidad": 67
+        },
+        "movimientos": ["Llamarada", "Ascuas", "Danza Espada"]
+      },
+      {
+        "nombre": "Stormwing",
+        "tipo": "Volador",
+        "stats": {
+          "hp": 120,
+          "ataque": 70,
+          "defensa": 50,
+          "ataque_especial": 55,
+          "defensa_especial": 50,
+          "velocidad": 90
+        },
+        "movimientos": ["Pájaro Osado", "Agilidad", "Rayo"]
+      },
+      {
+        "nombre": "Voltclaw",
+        "tipo": "Electrico",
+        "stats": {
+          "hp": 116,
+          "ataque": 63,
+          "defensa": 47,
+          "ataque_especial": 75,
+          "defensa_especial": 53,
+          "velocidad": 83
+        },
+        "movimientos": ["Rayo", "Trueno", "Danza Espada"]
+      }
+    ]
+  }
+]
